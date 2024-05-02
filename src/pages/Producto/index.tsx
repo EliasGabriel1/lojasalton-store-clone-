@@ -153,7 +153,7 @@ function ProductPage(props: any): JSX.Element {
                                             style={{ marginRight: '7px', width: '34px' }}
                                             alt="Express Shipping Icon"
                                         />
-                                        <span style={{ fontFamily: 'Santral Light', fontSize: "13px" }}>Complimentary Shipping &amp; Returns</span>
+                                        <span style={{ fontFamily: "Times New Arial", fontSize: "13px" }}>Complimentary Shipping &amp; Returns</span>
                                     </div>
 
                                     <div className="Container__medidas-e-sku-selector">

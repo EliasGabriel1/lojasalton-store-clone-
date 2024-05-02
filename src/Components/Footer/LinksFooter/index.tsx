@@ -10,16 +10,16 @@ function LinksFooter() {
     return (
         <div className="container-blocks">
             <div className="box-blocks">
-                <div className="footer__block-left">
+                <div className="footer__block">
                     <div className="block1">
-                        <h4>Client Care</h4>
+                        <h4>Categorias</h4>
                         <BlockLinks block="block1" />
                     </div >
                     <div className={`${window.width && window.width > 900 ? 'block2 eventnone' : "block2"}`} onClick={() => {
                         setOpen(!open);
                         document.querySelector(".mobile")!.classList.toggle('fixed');
                     }}>
-                        <h4>Our Company</h4>
+                        <h4>Institucional</h4>
                         <div className={`${window.width && window.width > 900 ? (open === true ? 'mobile footer-open' : "mobile footer-close") : open === true ? 'mobile footer-close' : "mobile footer-open"}`}>
                             <BlockLinks block="block2" />
                         </div>
@@ -33,10 +33,10 @@ function LinksFooter() {
                             <BlockLinks block="block3" />
                         </div>
                     </div>
-                </div>
-                <div className="block4">
-                    <h4>Latest from Tiffany</h4>
-                    <BlockLinks block="block4" />
+                    <div className="block4">
+                        <h4>Segurança</h4>
+                        <BlockLinks block="block4" />
+                    </div>
                 </div>
             </div>
         </div>

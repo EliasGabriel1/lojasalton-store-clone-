@@ -1,0 +1,44 @@
+.carousel-image{
+  border-radius: 24px ; 
+}
+
+.carousel-buttons{
+  bottom: 10%;
+  right: 5%;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-buttons button>svg{
+  filter: invert(0.1);
+}
+
+.carousel-buttons button>svg:hover{
+  filter: invert(0.5);
+}
+
+.carousel-dots{
+  position: absolute;
+  bottom: 10%;
+  transform: translateX(-50%);
+  left: 5%;
+  display: flex;
+}
+
+.carousel-dots .dot{
+  background-color: #FFFFFF90;
+  border-radius: 2px;
+  border: 1px solid #FFFFFF50;
+  width: 12px;
+  height: 4px;
+  display: block;
+  position: relative;
+  margin: 0 8px;
+}
+
+.carousel-dots .dot.active{
+  background-color: white;
+  width: 24px;
+  height: 4px;
+}

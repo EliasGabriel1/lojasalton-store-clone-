@@ -14,14 +14,15 @@
     background: white;
     width: 100%;
     min-width: 417px;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 150px);
     z-index: 1;
-    padding: 2.5vw 16px 0 2.5vw;
+    padding: 2.5vw 16px 2.5vw;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 3px;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     transform: translateY(-200%);
+    border: 1px solid #cccccc70;
 }
 
 .mini-cart.visible {
@@ -35,6 +36,7 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
+    min-height: 63vh;
 }
 
 .mini-cart ul>li {
@@ -82,7 +84,7 @@
     font-size: 2rem;
     color: #323232;
     line-height: 1.5;
-    font-family: 'Sterling Display';
+    font-family: var(--font-aux);
     font-weight: 200;
     font-style: normal;
     margin: 7vw 0 0;
@@ -172,7 +174,7 @@
 }
 
 .minicart__description-item {
-    font-family: 'Sterling Display', 'Santral Light', sans-serif;
+    font-family: var( --font-family);
     font-weight: 400;
     font-style: normal;
     font-size: .875rem;

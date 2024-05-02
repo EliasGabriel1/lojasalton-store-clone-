@@ -7,18 +7,12 @@ import Minicart from "../MiniCart";
 import FavoriteLink from "../FavoriteLink";
 import Profile from "../Profile";
 import "./header.css";
-import { useWindowSize } from "../../Hooks/useWindowSize";
 
 
 interface MenuProps {
   data: any;
   loading: boolean;
   error: any;
-}
-
-interface MinicartProps {
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
 }
 
 function Menu(props: MenuProps) {
@@ -28,19 +22,6 @@ function Menu(props: MenuProps) {
   const [error, setError] = useState<any>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isBlock, setisBlock] = useState(false);
-
-  const window = useWindowSize();
-
-  const handleMouseEnter: MinicartProps["onMouseEnter"] = () => {
-    setIsHovered(true);
-    document.body.classList.add("block");
-  };
-
-  const handleMouseLeave: MinicartProps["onMouseLeave"] = () => {
-    setIsHovered(false);
-    document.body.classList.remove("block");
-  };
-
 
   useEffect(() => {
     fetch("./api/Menu.json", {
@@ -63,6 +44,11 @@ function Menu(props: MenuProps) {
 
   }, [])
  
+  const handleBlur = () => {
+    setisBlock(!isBlock);
+};
+
+
   const handleClick = () => {
     setisBlock(!isBlock);
     setIsHovered(!isHovered);
@@ -82,15 +68,14 @@ function Menu(props: MenuProps) {
               </div>
 
               <div className="groupProfile__content">
-                <div className={isHovered ? "groupProfile fixed" : "groupProfile"}>
+                <div className={ "groupProfile"}>
                   <Profile />
                   <FavoriteLink />
                   <div className="Minicart-box__button"
                     onClick={handleClick}
-                    onMouseEnter={window.width && window.width > 900 ? handleMouseEnter : undefined}
-                    onMouseLeave={window.width && window.width > 900 ? handleMouseLeave : undefined}
+                    onBlur={handleBlur}
                   >
-                    <Minicart />
+                    <Minicart/>
                   </div>
                 </div>
               </div>

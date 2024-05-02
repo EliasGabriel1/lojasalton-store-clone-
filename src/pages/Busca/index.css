@@ -1,0 +1,41 @@
+.page-Busca .breadCrumb {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 10px;
+}
+
+body .loveyourWay {
+  margin: 0 auto !important;
+}
+
+.backToTopButtonContainer .button__label {
+  color: #000 !important;
+  font-size: 0;
+  padding: 0 !important;
+}
+
+.backToTopButtonContainer .button {
+  background: transparent !important;
+  border: none;
+  padding: 0;
+  min-height: 1rem !important;
+  height: 16px !important;
+}
+
+.backToTopButtonContainer .button__label {
+  color: #000 !important;
+  font-size: 0;
+  padding: 0 !important;
+}
+
+.backToTopButtonContainer {
+  position: static !important;
+  z-index: 10 !important;
+}
+
+.content-busca {
+  display: flex;
+}

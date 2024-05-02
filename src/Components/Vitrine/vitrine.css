@@ -1,248 +1,215 @@
 .vitrine {
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.vitrine>p {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: .875rem;
-    line-height: 1.71;
-    font-weight: 300;
+.vitrine > p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: var(--font-aux);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
 }
 
-body .vitrine>h3 {
-    text-align: center;
-    margin-bottom: 20px;
+body .vitrine > h3 {
+  text-align: center;
+  font-family: var(--font-aux);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
 }
 
 .handleNext,
 .handlePrev {
-    position: absolute;
+  position: absolute;
 }
 
 .handleNext {
-    right: 16px;
-    top: 50%;
-    transform: translatey(-50%);
+  right: 16px;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
 .handlePrev {
-    left: 16px;
-    top: 50%;
-    transform: translatey(-50%);
+  left: 16px;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
 .container-vitrine {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list-products {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
-.list-products>picture {
-    text-align: center;
-    width: 100%;
-    min-height: 286px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.list-products > picture {
+  text-align: center;
+  width: 100%;
+  min-height: 200px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-product {
-    display: flex;
-    gap: 20px;
-}
-
-button.shop-now::after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px #019fb6;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-    transition: transform 250ms ease-in-out;
+  display: flex;
+  gap: 20px;
 }
 
 button.shop-now:hover:after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
 }
-
 
 button.shop-now {
-    display: inline-block;
-    margin: 0;
-    background-color: #fff;
-    color: #000;
-    height: 40px;
-    padding: 12px 24px;
-    border: 1px solid #000;
-    box-shadow: none;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 30px;
-    margin-bottom: 40px;
+  display: inline-block;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  height: 40px;
+  padding: 12px 24px;
+  border: 1px solid #000;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.MidBanners>.list-products {
-    justify-content: space-evenly;
+.MidBanners > .list-products {
+  justify-content: space-evenly;
 }
 
-.MidBanners>.list-products h4 {
-    font-weight: 600;
-    font-family: 'Santral bold', sans-serif;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: #000;
-    line-height: 31.92px;
-    margin-top: 10px;
+.MidBanners > .list-products h4 {
+  font-weight: 600;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #000;
+  line-height: 31.92px;
+  margin-top: 10px;
 }
 
-.MidBanners>.list-products a {
-    line-height: 17.5px;
-    font-weight: 400;
-    height: auto;
-    font-size: 14px;
-    display: inline-block;
-    margin: 0;
-    box-shadow: none;
+.MidBanners > .list-products a {
+  line-height: 17.5px;
+  font-weight: 400;
+  height: auto;
+  font-size: 14px;
+  display: inline-block;
+  margin: 0;
+  box-shadow: none;
 }
 
 .MidBanners img {
-    max-width: 512px;
+  max-width: 512px;
 }
 
-body .ShopbyCategory>h3 {
-    font-weight: 600;
-    font-family: 'Santral bold', sans-serif;
-    font-style: normal;
-    font-size: 1.5rem;
-    line-height: 41.04px;
-    margin-bottom: 4px;
+body .ShopbyCategory > h3 {
+  font-weight: bold;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 42px;
 }
 
-body .ShopbyCategory picture>img {
-    min-width: 192px;
-    max-width: 192px;
+body .ShopbyCategory picture > img {
+  min-width: 192px;
+  max-width: 192px;
 }
 
-body .ShopbyCategory picture>h4::after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px #019fb6;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-    transition: transform 250ms ease-in-out;
+body .ShopbyCategory picture > h4 {
+  display: inline-block;
+  margin: 0;
+  box-shadow: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: center;
+  cursor: pointer;
 }
-
-body .ShopbyCategory picture>h4:hover:after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
-}
-
-body .MidBanners>.list-products a::after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px #019fb6;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-    transition: transform 250ms ease-in-out;
-}
-
-body .MidBanners>.list-products a:hover:after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
-}
-
-
-body .ShopbyCategory picture>h4 {
-    display: inline-block;
-    margin: 0;
-    box-shadow: none;
-    font-weight: 400;
-    font-style: normal;
-    font-size: .875rem;
-    color: #000;
-    font-weight: 400;
-    line-height: 1.71;
-    text-align: center;
-    cursor: pointer;
-}
-
 
 .loveyourWay-group-text__description,
 .fromthesource-group-text__description {
-    padding-top: 10px;
-    font-size: .875rem;
-    line-height: 24px;
-    padding-bottom: 14px !important;
-    color: #000;
-    font-weight: 300;
-    font-style: normal;
+  padding-top: 10px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  padding-bottom: 14px !important;
+  color: #000;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .TiffanyExperience.container {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .TiffanyExperience h3 {
-    padding-top: 24px;
-    margin-top: 54px;
+  padding-top: 24px;
+  margin-top: 54px;
 }
 
-.TiffanyExperience picture>img {
-    max-width: 28px;
-    margin-bottom: 5px;
+.TiffanyExperience picture > img {
+  max-width: 28px;
+  margin-bottom: 5px;
 }
 
 .TiffanyExperience h4.text {
-    padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .TiffanyExperience h4.description {
-    font-size: .875rem;
-    line-height: 1.71;
-    padding: 0 15px;
-    word-break: break-word;
-    padding-bottom: 14px;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 258px;
-    margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.71;
+  padding: 0 15px;
+  word-break: break-word;
+  padding-bottom: 14px;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 258px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
-    .list-products>picture {
-        max-width: 286px;
-    }
+  .list-products > picture {
+    max-width: 200px;
+  }
 
-    .product-carousel-container.home__vitrinedeprodutos{
-        margin-top: 50px;
-    }
+  .product-carousel-container.home__vitrinedeprodutos {
+    margin-top: 50px;
+  }
 
-    .ShopbyCategory.container-patter{
-        padding-top: 45px;
-    }
+  .ShopbyCategory.container-patter {
+    padding-top: 45px;
+  }
 
-    .ShopbyCategory.container-patter h3,
-    .ShopbyCategory.container-patter p{
-        text-align: start;
-    }
+  .ShopbyCategory.container-patter h3,
+  .ShopbyCategory.container-patter p {
+    text-align: start;
+  }
 
-    .ShopbyCategory.container-patter .handlePrev,
-    .ShopbyCategory.container-patter .handleNext{
-        background: #e5e5e590;
-        padding: 7px;
-        border-radius: 4px;
-        top: 61%;
-    }
+  .ShopbyCategory.container-patter .handlePrev,
+  .ShopbyCategory.container-patter .handleNext {
+    background: #e5e5e590;
+    padding: 7px;
+    border-radius: 4px;
+    top: 61%;
+  }
 }

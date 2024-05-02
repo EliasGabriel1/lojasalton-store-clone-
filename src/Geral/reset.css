@@ -1,265 +1,241 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Santral Light','Sterling Display', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
+:root {
+  --font-family: "Times New Roman", sans-serif;
+  --font-aux: "Roboto", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
-    font-family: 'Santral Light';
+    font-family: 'Times New Roman';
     font-style: normal;
     font-weight: normal;
-    src: local('Santral Light'), url('./fontes/Taner Ardali - Santral-Light.woff') format('woff');
-}
-
-
-@font-face {
-    font-family: 'Santral Light Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Santral Light Italic'), url('./fontes/Taner Ardali - Santral-LightItalic.woff') format('woff');
+    src: local('Times New Roman'), url('./fontes/times.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Santral bold';
+    font-family: 'Times New Roman';
     font-style: normal;
     font-weight: bold;
-    src: local('Santral bold'), url('./fontes/Santral-Bold.ttf') format('ttf');
+    src: local('Times New Roman'), url('./fontes/timesbd.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Sterling Display';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sterling Display'), url('./fontes/FTSterlingTrialVF-BF642639dd89594.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Sterling Display Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sterling Display Regular'), url('./fontes/FTSterlingTrial-Regular-BF642639dd9d5de.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Sterling Display Medium';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Sterling Display medium'), url('./fontes/FTSterlingTrial-Medium-BF642639dd2d2c2.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Sterling Display Light';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Sterling Display Light'), url('./fontes/FTSterlingTrial-Light-BF642639dd8f7cb.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Sterling Display Light Italic';
+    font-family: 'Times New Roman';
     font-style: italic;
-    font-weight: 200;
-    src: local('Sterling Display Light Italic'), url('./fontes/FTSterlingTrial-Light-BF642639dd8f7cb.woff') format('woff');
+    font-weight: normal;
+    src: local('Times New Roman'), url('./fontes/timesi.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Times New Roman'), url('./fontes/timesbi.ttf') format('truetype');
+}
+
 
 input:focus-visible {
-    outline-offset: none;
+  outline-offset: none;
 }
 
 input[type="text" i] {
-    padding: 0;
+  padding: 0;
 }
 
 :focus-visible {
-    outline: none;
+  outline: none;
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
-    height: 10px;
+  width: 1px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #d2cfcf;
-    border: 1px solid #787878;
+  background: #d2cfcf;
+  border: 1px solid #787878;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #585858;
+  background: #585858;
 }
 
 button::-webkit-scrollbar-thumb {
-    background: transparent;
+  background: transparent;
 }
 
 .container {
-    max-width: 1320px;
-    margin: 0 auto;
+  max-width: 1320px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .container-patter {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 ul,
 li {
-    list-style: none !important;
+  list-style: none !important;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .is-hidden {
-    display: none;
+  display: none;
 }
 
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
 .justify-space-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.flex-column{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.mb-1-5rem{
-    margin-bottom: 1.5rem;
+.mb-1-5rem {
+  margin-bottom: 1.5rem;
 }
 
-.pb-16{
-    padding-bottom: 16px;
+.pb-16 {
+  padding-bottom: 16px;
 }
 
-.px-12{
-    padding: 12px 0;
+.px-12 {
+  padding: 12px 0;
 }
 
-.mb-1rem{
-    margin-bottom: 1rem;
+.mb-1rem {
+  margin-bottom: 1rem;
 }
 
-.mr-24{
-    margin-right: 24px;
+.mr-24 {
+  margin-right: 24px;
 }
 
-.b-t{
-    border-top: 1px solid #000;
+.b-t {
+  border-top: 1px solid #000;
 }
 
-.b-b{
-    border-bottom: 1px solid #000;
+.b-b {
+  border-bottom: 1px solid #000;
 }
 
 .mb05rem {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mt05rem {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .searchBox,
 .groupResearch__ContactUs,
 .groupResearch,
 .MiniCartSvg {
-    height: fit-content;
+  height: fit-content;
 }
 
 @media screen and (min-width: 900px) {
-    .d-grid {
-        display: grid;
-        grid-template-columns: 27% 73%;
-    }
+  .d-grid {
+    display: grid;
+    grid-template-columns: 27% 73%;
+  }
 
-    .d-desktop {
-        display: none;
-    }
+  .d-desktop {
+    display: none;
+  }
 
-    .d-mobile  {
-        display: unset;
-    }
+  .d-mobile {
+    display: unset;
+  }
 
-    .d-grid-1fr-1fr{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .d-grid-1fr-1fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .container-patter {
-        padding: 0 16px;
-    }
+  .container-patter {
+    padding: 0 16px;
+  }
 
-    .d-mobile {
-        display: none;
-    }
+  .d-mobile {
+    display: none;
+  }
 
-    .d-desktop {
-        display: unset;
-    }
+  .d-desktop {
+    display: unset;
+  }
 }
 
 @media screen and (max-width: 1280px) {
-
-    body .menu,
-    body .head {
-        padding: 0 16px;
-    }
+  body .menu,
+  body .head {
+    padding: 0 16px;
+  }
 }
-
 
 @keyframes slidein {
-    from {
-        position: absolute;
-        right: 100%;
-        width: 100%;
-    }
+  from {
+    position: absolute;
+    right: 100%;
+    width: 100%;
+  }
 
-    to {
-        position: absolute;
-        right: 0%;
-        width: 100%;
-    }
+  to {
+    position: absolute;
+    right: 0%;
+    width: 100%;
+  }
 }
 
-
 @keyframes slideOnTop {
-    from {
-        position: absolute;
-        top: 30%;
-        width: 100%;
-    }
+  from {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
 
-    to {
-        position: absolute;
-        top: 0%;
-        width: 100%;
-    }
+  to {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+  }
 }

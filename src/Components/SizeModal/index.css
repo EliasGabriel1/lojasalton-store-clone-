@@ -1,27 +1,3 @@
-.Profile {
-  width: 17px;
-  height: 17px;
-}
-
-.Profile picture > svg {
-  width: 17px;
-  height: 17px;
-}
-
-.Profile:hover picture > svg {
-  display: none;
-}
-
-.Profile picture > img {
-  display: none;
-  width: 17px;
-  height: 17px;
-}
-
-.Profile:hover picture > img {
-  display: block;
-}
-
 .modal-container {
   position: fixed;
   top: 0;

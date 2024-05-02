@@ -78,7 +78,7 @@ function Researcher(props: any) {
                         <div className="box-input">
                             <input
                                 type="text"
-                                placeholder="Search..."
+                                placeholder="O que você procura?"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />

@@ -5,7 +5,7 @@
 
 .menu .categoria>ul>li,
 .menu .categoria>ul>li>a {
-    font-family: 'Santral Light', sans-serif;
+    font-family: var( --font-family);
 }
 
 .promocao {
@@ -26,20 +26,6 @@
 
 .desktop .categoria>ul>li:first-child .name-categoria {
     margin-left: 0px;
-}
-
-.desktop .categoria>ul>li>.name-categoria::after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px #019fb6;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-    transition: transform 250ms ease-in-out;
-}
-
-.desktop .categoria>ul>li:hover>.name-categoria::after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
 }
 
 .desktop .categoria>ul>li:hover>.name-categoria {
@@ -109,9 +95,7 @@
 header .menu {
     background-color: white;
     position: relative;
-    padding-bottom: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0 auto;
 }
 
 header .desktop .subcategoria {
@@ -131,7 +115,7 @@ header .desktop .subcategoria>ul>li {
     padding: 8px 0;
     color: #000;
     line-height: 1.71;
-    font-family: 'Santral Light';
+    font-family: var( --font-family);
     font-weight: 400;
     font-style: normal;
     outline: 0;
@@ -279,7 +263,7 @@ header.sticky {
     font-size: .875rem;
     line-height: 1.72;
     letter-spacing: normal;
-    font-family: 'Santral Light';
+    font-family: var( --font-family);
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -291,7 +275,7 @@ header.sticky {
     color: #000;
     line-height: 1.71;
     letter-spacing: normal;
-    font-family: 'Santral Light';
+    font-family: var( --font-family);
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -316,12 +300,10 @@ header.sticky {
 }
 
 .searchBox>.group-input input {
-    width: 300px;
+    width: 30vw;
     height: 36px;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    padding: 0 5px 0 20px;
+    padding: 8px 16px;
+    border-radius: 40px;
 }
 
 .FavoriteLink,
@@ -525,7 +507,7 @@ header.sticky {
 @media screen and (min-width: 900px) {
 
     .searchBox>.group-input input {
-        border-bottom: 1px solid #000;
+        border: 1px solid #000;
     }
 
     .searchBox.desktop>.group-input input {
@@ -534,10 +516,10 @@ header.sticky {
     }
 
     .container.head {
-        padding-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
 
     .answer-search {
@@ -554,32 +536,6 @@ header.sticky {
 
     .searchBox>.group-input {
         margin-left: 24px;
-    }
-
-    .groupProfile {
-        margin-right: 24px;
-        z-index: 1000;
-        position: relative;
-    }
-
-    .groupProfile__content {
-        position: relative;
-        width: fit-content;
-        min-width: 347px;
-    }
-
-    .groupProfile.fixed {
-        position: absolute;
-        top: -40px;
-        right: -25px;
-        padding: 0 24px 0 70px;
-        z-index: 100000000;
-        height: 80px;
-        background-color: #81d8d0;
-    }
-
-    .groupProfile.fixed {
-        white-space: nowrap;
     }
 
     .groupResearch {

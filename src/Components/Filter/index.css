@@ -1,0 +1,29 @@
+.Container___texGroup h4 {
+  color: #000;
+  line-height: 1.34;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.Container___texGroup p {
+  font-size: inherit !important;
+  line-height: 1.71;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 14px 0;
+}
+
+.Container___texGroup {
+  max-width: calc(100% - 32px);
+}
+
+.container-banner-category{
+    margin-bottom: 56px;
+}
+
+@media (min-width: 1200px) {
+  .Container___texGroup {
+    max-width: calc(100% - 200px);
+  }
+}

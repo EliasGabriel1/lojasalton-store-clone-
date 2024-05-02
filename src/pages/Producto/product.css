@@ -36,7 +36,7 @@
 }
 
 .ProductsDescription .ListPrice {
-    font-family: 'Montserrat';
+    font-family: var(--font-aux);
     font-style: italic;
     font-weight: 100;
     font-size: 14px;
@@ -95,7 +95,7 @@
 }
 
 .content-ProductsDescription .express-shipping span{
-    font-family: 'Santral Light';
+    font-family: var( --font-family);
     font-size: 13px;
 }
 

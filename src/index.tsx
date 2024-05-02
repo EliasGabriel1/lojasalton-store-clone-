@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppProvider from "./Context/AppContext";
 import "./Geral/reset.css";
 import "./Geral/geral.css";
+import Busca from './pages/Busca';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,6 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="Category" element={<Category />} />
+        <Route path="Busca" element={<Busca />} />
         <Route path="Producto" element={<Producto />} />
         <Route path="checkout" element={<Checkout />} />
       </Routes>

@@ -1,23 +1,10 @@
 .FavoriteLink{
-    width: 17px;
-    height: 17px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
 
 .FavoriteLink picture>svg{
-    width: 17px;
-    height: 17px;
-}
-
-.FavoriteLink:hover picture>svg{
-    display: none;
-}
-
-.FavoriteLink picture>img{
-    display: none;
-    width: 17px;
-    height: 17px;
-}
-
-.FavoriteLink:hover picture>img{
-    display: block;
+    width: 32px;
+    height: 32px;
 }

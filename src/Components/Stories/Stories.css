@@ -50,7 +50,7 @@
     text-align: left;
     word-break: break-word;
     font-weight: 600;
-    font-family: 'Santral bold', sans-serif;
+    font-family: var( --font-family);
     font-style: normal;
     font-size: 1.125rem;
 }
@@ -109,7 +109,7 @@
         justify-content: center;
         line-height: 30.78px;
         font-weight: 600;
-        font-family: 'Santral bold', sans-serif;
+        font-family: var( --font-family);
         font-size: 18px;
         max-width: 208.500px;
         padding: 8px;
