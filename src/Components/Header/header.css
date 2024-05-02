@@ -73,7 +73,7 @@
 
 .menu .desktop .container-patter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .desktop .subcategoria {
@@ -104,10 +104,6 @@
 
 .desktop .categoria>ul>li:hover .subcategoria>ul>li {
     width: fit-content;
-}
-
-header {
-    border-top: 4px solid #81d8d0;
 }
 
 header .menu {
@@ -310,18 +306,6 @@ header.sticky {
     margin-right: 50px;
 }
 
-.searchBox .box-input {
-    position: absolute;
-    bottom: -250px;
-    background-color: #fff;
-    width: 100vw;
-    max-width: 1600px;
-    z-index: 10;
-    right: 0;
-    justify-content: space-between;
-    padding: 0 40px 40px;
-}
-
 .searchBox>.group-input {
     display: flex;
 }
@@ -332,10 +316,6 @@ header.sticky {
 }
 
 .searchBox>.group-input input {
-    top: -20px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
     width: 300px;
     height: 36px;
     border-top: 0px;

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./index.css";
 import { VitrineProps } from "../../Components/Vitrine";
-import TopBar from "../../Components/TopBar"
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import ShelfCustom from "../../Components/Shelf";
@@ -49,7 +48,6 @@ function Category() {
 
     return (
         <div className="page-category">
-            <TopBar />
             <Header data={data} loading={loading} error={error} />
             <BannerCategory />
             <div className="container container-breadcrumb">

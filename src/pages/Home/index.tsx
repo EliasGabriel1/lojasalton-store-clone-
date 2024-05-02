@@ -4,12 +4,11 @@ import ShelfCustom from "../../Components/Shelf";
 import "./home.css";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
-import BannerVideo from "../../Components/BannerVideo";
+import BannerHome from "../../Components/BannerHome";
 import CarrosselBanner from "../../Components/CarrosselBanner";
 import BannerFinal from "../../Components/BannerFinal";
 import Stories from "../../Components/Stories";
 import ContainerBannerMid from "../../Components/ContainerBannerMid";
-import TopBar from "../../Components/TopBar"
 
 interface HomeProps { }
 
@@ -254,9 +253,8 @@ const Home: React.FC<HomeProps> = () => {
 
     return (
         <>
-            <TopBar />
             <Header data={data} loading={loading} error={error} />
-            <BannerVideo />
+            <BannerHome/>
             <CarrosselBanner data={CarroselMiniBanners} buttonClassName="shop-now" buttonText="Shop Now" buttonHref="/shop-now" quantidadeItemMobile={2} quantidadeItem={4} />
             <CarrosselBanner icon={true} className="MidBanners" data={MidBanners} quantidadeItemMobile={1} quantidadeItem={4} />
             <ShelfCustom data={data} error={error} loading={loading} text="" quantidadeItemMobile={2} quantidadeItem={4} />
